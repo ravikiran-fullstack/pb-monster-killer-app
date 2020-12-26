@@ -7,11 +7,14 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <title>Monster Killer</title>
   <link rel="stylesheet" href="assets/styles/app.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
   <script src="assets/scripts/vendor.js" defer></script>
   <script src="assets/scripts/app.js" defer></script>
 </head>
 
-<body>
+<body class="dark-theme || light-theme">
+  <button class="btn-toggle">toggle theme</button>
+
   <section id="health-levels">
     <h2>MONSTER HEALTH</h2>
     <progress id="monster-health" max="100" value="100">100%</progress>

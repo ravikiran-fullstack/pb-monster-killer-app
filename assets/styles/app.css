@@ -6,6 +6,31 @@ body {
   background: #2c2c2c;
 }
 
+body {
+  --text-color: #222;
+  --bkg-color: #fff;
+  --panel-color: #2c2c2c;
+  --panel-text-color: white;
+  --anchor-color: #0033cc;
+}
+
+body.dark-theme {
+  --text-color: #eee;
+  --bkg-color: #2c2c2c;
+  --panel-color: white;
+  --panel-text-color: black;
+  --anchor-color: #809fff;
+}
+
+body {
+  color: var(--text-color);
+  background: var(--bkg-color);
+}
+
+a {
+  color: var(--anchor-color);
+}
+
 h2 {
   font-size: 1.25rem;
   margin: 1rem 0.5rem;
@@ -67,7 +92,8 @@ button:active {
   border-radius: 10px;
   padding: 1rem;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
-  background: white;
+  color: var(--panel-text-color);
+  background: var(--panel-color);
 }
 
 #controls {
