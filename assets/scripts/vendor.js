@@ -7,17 +7,6 @@ const strongAttackBtn = document.getElementById('strong-attack-btn');
 const healBtn = document.getElementById('heal-btn');
 const logBtn = document.getElementById('log-btn');
 
-// attackBtn.addEventListener('click', () => {
-//   if(monsterHealthBar.value <= 0 || playerHealthBar.value <= 0){
-//     attackBtn.disabled = true;
-//     console.log('Game over');
-//     return;
-//   }
-//   let damage = dealMonsterDamage(10);
-//   let playerDamage = dealPlayerDamage(10);
-//   console.log(damage, playerDamage);
-// });
-
 function adjustHealthBars(maxLife) {
   monsterHealthBar.max = maxLife;
   monsterHealthBar.value = maxLife;
@@ -41,10 +30,6 @@ function increasePlayerHealth(healValue) {
   playerHealthBar.value = +playerHealthBar.value + healValue;
 }
 
-function resetGame(value) {
-  playerHealthBar.value = value;
-  monsterHealthBar.value = value;
-}
 
 function removeBonusLife() {
   bonusLifeEl.parentNode.removeChild(bonusLifeEl);
