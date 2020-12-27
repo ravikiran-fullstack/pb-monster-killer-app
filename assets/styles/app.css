@@ -129,7 +129,11 @@ button:active {
 }
 
 .sliderSwitch {
-  background-color: #ccc;
+  font-size: 10px;
+  font-weight: bold;
+  padding-top: 12px;
+  background-color: black;
+  color: white;
   bottom: 0;
   cursor: pointer;
   left: 0;
@@ -140,7 +144,7 @@ button:active {
 }
 
 .sliderSwitch:before {
-  background-color: #fff;
+  background-color:#ccc;
   bottom: 4px;
   content: "";
   height: 26px;
@@ -151,7 +155,8 @@ button:active {
 }
 
 input:checked + .sliderSwitch {
-  background-color: #000;
+  background-color: white;
+  color:black
 }
 
 input:checked + .sliderSwitch:before {
