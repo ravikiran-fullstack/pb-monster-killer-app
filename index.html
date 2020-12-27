@@ -13,9 +13,14 @@
 </head>
 
 <body class="dark-theme || light-theme">
-  <button class="btn-toggle">toggle theme</button>
-
+  
   <section id="health-levels">
+    <div class="darkMode">
+      <label class="switch">
+        <input id="darkMode" type="checkbox" />
+        <div class="sliderSwitch round"></div>
+      </label>  
+    </div>
     <h2>MONSTER HEALTH</h2>
     <progress id="monster-health" max="100" value="100">100%</progress>
     <h2>PLAYER HEALTH<span id="bonus-life">1</span></h2>

@@ -8,7 +8,7 @@ let hasBonusLife = true;
 let monsterCurrentHealth = chooseMaxHealth;
 let playerCurrentHealth = chooseMaxHealth;
 
-let enteredHealthValue = prompt('enter Max health players can have',100);
+let enteredHealthValue = 100;//prompt('enter Max health players can have',100);
 
 chooseMaxHealth = parseInt(enteredHealthValue);
 if(isNaN(chooseMaxHealth) || chooseMaxHealth <= 0){
@@ -90,10 +90,11 @@ healBtn.addEventListener('click', healPlayerHandler);
 
 
 
-const btn = document.querySelector(".btn-toggle");
+const darkMode = document.querySelector("#darkMode");
 
 // Listen for a click on the button
-btn.addEventListener("click", function() {
+darkMode.addEventListener("change", function() {
   // Then toggle (add/remove) the .dark-theme class to the body
   document.body.classList.toggle("dark-theme");
 });
+
